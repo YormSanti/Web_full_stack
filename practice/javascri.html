@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+      body {
+        background-image: url("https://i.pinimg.com/736x/bc/db/a5/bcdba545b0555aebeecd0b26f1a1c0a3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      /* Button */
+      #button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #button:hover {
+        background-color: #add8e6;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between; /* icon on left, links on right */
+        align-items: center;
+        font-family: Arial, sans-serif;
+        padding:10px 30px;
+        border-bottom: 1px solid #acd942;
+        background-color: rgba(255, 255, 255, 0.8);
+        
+      }
+
+      /* Navbar icon */
+      .iconnavbar img {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Navbar links */
+      .nav-links a {
+        text-decoration: none;
+        color: #007bff;
+        margin-left: 30px;
+        font-size: 16px;
+      }
+
+      .nav-links a:hover {
+        color: #a3da57;
+      }
+
+      .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        width: 150px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ✅ Navbar (icon left, links right) -->
+    <nav class="navbar">
+      <a class="iconnavbar" href="#">
+        <img
+          src="https://img.icons8.com/?size=100&id=8113&format=png&color=000000"
+          alt="icon"
+        />
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascri.html">JavaScript</a>
+        <a href="bootstrap.html">Bootstrap</a>
+      </div>
+    </nav>
+
+    <div>
+      <h1 style="text-align: center">Introduction to JavaScript</h1>
+
+      <button
+        id="button"
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+      >
+        Click me to display Date and Time
+      </button>
+
+      <p style="text-align: center" id="demo"></p>
+    </div>
+
+    <div class="content">
+      <h2>Introduction</h2>
+      <p>
+        JavaScript is a versatile programming language primarily used for
+        enhancing the interactivity and functionality of websites. It allows
+        developers to create dynamic content, control multimedia, animate
+        images, and much more.
+      </p>
+    </div>
+  </body>
+</html>

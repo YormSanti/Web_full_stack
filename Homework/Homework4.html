@@ -9,13 +9,26 @@
       .tableemployee {
         font-family: Arial, Helvetica, sans-serif;
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-radius: 20px;
+        border-spacing: 0;
+        
+
+
       }
       td,
       th {
         border: 1px solid black;
         padding: 8px;
         text-align: left;
+        
+      }
+
+      tr:nth-child(odd){
+        background-color: #058cca;
+      }
+      tr:nth-child(even){
+        background-color: #612b2b;
       }
     </style>
   </head>
@@ -25,7 +38,7 @@
         <h1>Employee Salary</h1>
       </caption>
       <thead>
-        <tr>
+        <tr style="background-color: yellow;">
           <td>No</td>
           <td>Employee</td>
           <td>Age</td>
@@ -42,6 +55,24 @@
           <td>200$</td>
         </tr>
         <tr>
+          <td>2</td>
+          <td>PP Straing</td>
+          <td>20</td>
+          <td>400$</td>
+          <td>150$</td>
+        </tr> <tr>
+          <td>2</td>
+          <td>PP Straing</td>
+          <td>20</td>
+          <td>400$</td>
+          <td>150$</td>
+        </tr> <tr>
+          <td>2</td>
+          <td>PP Straing</td>
+          <td>20</td>
+          <td>400$</td>
+          <td>150$</td>
+        </tr> <tr>
           <td>2</td>
           <td>PP Straing</td>
           <td>20</td>

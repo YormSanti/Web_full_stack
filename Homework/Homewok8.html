@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework8</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=20183&format=png&color=000000" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        
+      }
+
+      body {
+        background-image: url("https://i.pinimg.com/736x/fe/f8/ea/fef8ea55efbc15295a967587608ee49f.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .navbar-list {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        padding: 20px;
+        color: black;
+        transition: color 0.3s, font-size 0.3s;
+      }
+
+      .nav-item:hover {
+        color: blue;
+        font-size: 18px;
+      }
+
+      .btn {
+        padding: 10px 15px;
+        margin-right: 20px;
+        border-radius: 15px;
+        background-color: rgb(154, 154, 207);
+        border: none;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+      }
+
+      .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        margin: 50px auto;
+      }
+
+      .content h2 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .p-content {
+        font-size: 16px;
+        color: #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* ✅ Main section: Intro left + Product center in one line */
+      .main-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        margin-top: 50px;
+    
+      }
+
+      .intro-content {
+        width: 200px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        margin-left: 100px;
+        
+        
+      }
+
+      .intro-content h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .intro-content p {
+        font-size: 15px;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        width: 800px;
+        gap: 20px;
+      }
+
+      .product-img {
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .p-name {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .footer-logo{
+            display: flex;
+            align-items: center;
+
+            
+        }
+
+        .footer-logo img{
+            width: 35px;
+            height: 35px;
+        }
+        .footer-logo h3{
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .footer {
+            margin: 150px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: lightblue;
+            padding: 20px;
+            align-items: start;
+        }
+        .footer-colums{
+            display: flex;
+            gap: 100px;
+            
+        }
+        .footer-colum h4{
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+        }
+        .footer-colum a{
+            display: block;
+            text-decoration: none;
+            margin: 5px;
+        }
+        .contect-item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contect-item img{
+            width: 12px;
+            height: 12px;
+
+        
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-left">
+        <img
+          class="icon"
+          src="https://img.icons8.com/?size=100&id=8113&format=png&color=000000"
+          alt="icon"
+        />
+        <ul class="navbar-list">
+          <li><a href="" class="nav-item">Home</a></li>
+          <li><a href="" class="nav-item">Product</a></li>
+          <li><a href="" class="nav-item">Contact</a></li>
+          <li><a href="" class="nav-item">About</a></li>
+        </ul>
+      </div>
+      <button class="btn">Login</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="content">
+      <h2>Online Store</h2>
+      <p class="p-content">
+        Welcome to our online store! We offer a wide variety of products to meet
+        your needs. Browse through our categories and find the best deals today!
+      </p>
+    </div>
+
+    <!-- ✅ Intro (left) + Product (center) in one line -->
+    <div class="main-section">
+      <div class="intro-content">
+        <h2>Introduction</h2>
+        <p>
+          A cloth shop, or clothing store, is a business that sells apparel,
+          which can range from everyday wear to high-end fashion and
+          accessories. These shops can be physical boutiques, larger retail
+          outlets, or online stores, and they are often built around a specific
+          niche, style, or brand identity. A successful cloth shop needs a
+          business plan, defined target audience, and a marketing strategy,
+          along with a focus on customer experience, whether in-store or online.
+        </p>
+      </div>
+
+      <div class="product">
+        <div>
+          <img
+            class="product-img"
+            src="https://i.pinimg.com/736x/ce/50/ef/ce50ef0c847f9b97b970f66816b4356d.jpg"
+            alt="shirt"
+          />
+          <p class="p-name">T-shirt</p>
+        </div>
+
+        <div>
+          <img
+            class="product-img"
+            src="https://i.pinimg.com/1200x/a4/15/61/a415617218dc5273f8c2260d905cecd0.jpg"
+            alt="shirt"
+          />
+          <p class="p-name">Cap</p>
+        </div>
+
+        <div>
+          <img
+            class="product-img"
+            src="https://i.pinimg.com/1200x/e5/4b/e8/e54be81bbf68a7911feb343e136f349c.jpg"
+            alt="shirt"
+          />
+          <p class="p-name">Black T-shirt</p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <!-- Logo -->
+         <div class="footer-logo">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>Cloth Shop</h3>
+        </div>
+
+            <!-- Items -->
+             <div class="footer-colums">
+                <div class="footer-colum">
+                    <h4>Products</h4>
+                    <a href="">Shirt</a>
+                    <a href="">Shoes</a>
+                    <a href="">Dress</a>
+                </div>
+                <div class="footer-colum">
+                    <h4>Legal</h4>
+                    <a href="">Privacy</a>
+                    <a href="">Shipping</a>
+                    <a href="">Term & Condition</a>
+                </div>
+
+                <div class="footer-colum">
+                    <h4>Contact</h4>
+                    <div class="contect-item">
+                        <img src="https://img.icons8.com/?size=100&id=7880&format=png&color=000000" alt="">
+                        <p><span>Phnom Penh</span></p>
+                    </div>
+                    <div class="contect-item">
+                        <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000" alt="">
+                        <a href="mailto:yormsanti38@gmail.com">info@gmail.com</a>
+                    </div>
+                    <div class="contect-item">
+                        <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="">
+                        <a href="tel:+885 11256124">+885 11256124</a>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+             </div>
+
+       
+    </footer>
+  </body>
+</html>

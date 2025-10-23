@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Demo</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+     .navbar{
+      background-color: rgb(29, 29, 79);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     }
+
+    .navbar-list{
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-item{
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+      display: block;
+    }
+    
+    .nav-item:hover{
+      color: tomato;
+      font-size: 18px;
+    }
+
+    .logo{
+      width: 60px;
+      height: 60px;
+    }
+
+    .btn{
+      padding: 6px 12px;
+      margin-right: 20px;
+      background-color: tomato;
+      border: none;
+      border-radius: 6px;
+    }
+    .btn:hover{
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <!-- Logo -->
+     <div>
+      <img class="logo" src="https://img.icons8.com/?size=100&id=118568&format=png&color=000000" alt="">
+     </div>
+
+    <!-- Navbar -->
+    <ul class="navbar-list">
+      <li><a href="" class="nav-item">Home</a></li>
+      <li><a href="" class="nav-item">Product</a></li>
+      <li><a href="" class="nav-item">Contact</a></li>
+      <li><a href="" class="nav-item">About</a></li>
+    </ul>
+
+    <!-- Button Login -->
+     <button class="btn">Login</button>
+  </div>
+  <!-- Hero -->
+  <img style="width: 100%; height: 500px;" src="https://plus.unsplash.com/premium_photo-1673177667569-e3321a8d8256?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y292ZXIlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="">
+</body>
+</html>
