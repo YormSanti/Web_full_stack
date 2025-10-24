@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    
+
+    <style>
+        
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://i.pinimg.com/736x/5b/10/9c/5b109c12eff384d888138c1aa35dad8d.jpg");
+      background-size: cover;
+      
+    }
+
+    .container {
+      background:  rgba(255, 255, 255, 0.8);
+      width: 400px;
+      padding: 40px 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+      color: #0E2148;
+    }
+
+    .container img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      padding: 8px;
+    }
+
+    .container h2 {
+      font-size: 22px;
+      color: #0E2148;
+      margin-bottom: 6px;
+    }
+
+    .container p {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 13px;
+      color: #0E2148;
+      margin-bottom: 6px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+      background: #fafafa;
+    }
+
+    .input-group input:focus {
+      border-color: #0E2148;
+      box-shadow: 0 0 6px #396fdc;
+      outline: none;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-bottom: 22px;
+    }
+
+    .forgot a {
+      color: #0E2148;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    /* ==== Button ==== */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #0E2148; 
+      cursor: pointer;
+    }
+
+
+    .btn:hover{
+      cursor: pointer;
+      box-shadow: 0 0 6px #396fdc;
+
+    }
+
+    .register {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .register a {
+      color: #134686;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .register a:hover {
+      color: #0E2148;
+      text-decoration: underline;
+    }
+  
+    </style>
+
+</head>
+<body>
+    
+  <div class="container">
+    <img src="https://i.pinimg.com/736x/34/64/ad/3464ad1c33c983b87d66f14b092f11ee.jpg" alt="User Icon">
+
+    <h2>Welcome Back</h2>
+    <p>Please login to your account</p>
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter username">
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter password">
+    </div>
+
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="btn">Login</button>
+
+    <div class="register">
+      Don’t have an account? <a href="/HTML/day9register.html">Register</a>
+    </div>
+  </div>
+
+</body>
+
+
+
+</html>
